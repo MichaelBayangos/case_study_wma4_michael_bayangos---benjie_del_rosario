@@ -1,0 +1,80 @@
+
+.login_signup_background{
+    background-image: url(img/LoginBackground.png);
+    background-size: cover;
+}
+.home_background{
+    background-image: url(img/Desktop\ -\ 2.png);
+    background-size: cover;
+}
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.loginContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h2{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+}
+form{
+    width: 500px;
+    padding: 30px;
+    background: #0000009a;
+    border-radius: 15px;
+}
+
+input{
+    display: block;
+    border: none;
+    width: 95%;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+label{
+    color: #000000;
+    font-size: 18px;
+    padding: 10px;
+}
+button{
+    float: right;
+    background: #a05204ab;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: none;
+}
+button:hover{
+    opacity: .7;
+}
+.error{
+    background: #f2dede;
+    color: #a94442;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+}
+.createAccountText{
+    font-size: 14px;
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+.createAccountText:hover{
+    text-decoration: underline;
+}
+
+.greetings{
+    background-color: #000000be;
+    color: white;
+    width: 800px;
+    padding: 30px;
+}
