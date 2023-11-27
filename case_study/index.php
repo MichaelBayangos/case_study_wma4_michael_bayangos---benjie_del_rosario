@@ -22,7 +22,7 @@ $user_data = check_login($conn);
         <h2>Put your thoughts into words <?php echo $user_data['user_name']; ?></h2>
     </div>
     <p id="data"></p>
-<p>Benjie del rosario</p>
+
 </body>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
