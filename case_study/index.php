@@ -15,7 +15,14 @@ $user_data = check_login($conn);
 </head>
 
 <body class="home_background">
-    <div id="home"></div>
+    <a href="logout.php">Logout</a>
+    <div class=greetings>
+        <h1>welcome</h1>
+        <br>
+        <h2>Put your thoughts into words <?php echo $user_data['user_name']; ?></h2>
+    </div>
+    <p id="data"></p>
+
 </body>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
