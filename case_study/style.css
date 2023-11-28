@@ -72,9 +72,9 @@ button:hover{
     text-decoration: underline;
 }
 
-.greetings{
-    background-color: #000000be;
-    color: white;
-    width: 800px;
-    padding: 30px;
+#home{
+    width: 1000px;
 }
+
+
+

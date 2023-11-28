@@ -15,33 +15,27 @@ $user_data = check_login($conn);
 </head>
 
 <body class="home_background">
-    <a href="logout.php">Logout</a>
-    <div class=greetings>
-        <h1>welcome</h1>
-        <br>
-        <h2>Put your thoughts into words <?php echo $user_data['user_name']; ?></h2>
-    </div>
-    <p id="data"></p>
-
+    <div id="home"></div>
 </body>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-        const dataDiv = document.getElementById("data");
+        const dataDiv1 = document.getElementById("home");
 
-        function fetchdata() {
-            const xhr = new XMLHttpRequest();
-            console.log(xhr);
-            xhr.open("GET", "get_data.php", true);
-            xhr.onload = function() {
-                if (xhr.status === 200) {
-                    dataDiv.innerHTML = xhr.responseText;
+        function fetchdata1() {
+            const xhr1 = new XMLHttpRequest();
+            console.log(xhr1);
+            xhr1.open("GET", "home.php", true);
+            xhr1.onload = function() {
+                if (xhr1.status === 200) {
+                    dataDiv1.innerHTML = xhr1.responseText;
                 }
             };
-            xhr.send();
+            xhr1.send();
 
         }
-        fetchdata();
-        setInterval(fetchdata, 1000);
+        fetchdata1();
+        setInterval(fetchdata1, 1000);
+
     });
 </script>
 
