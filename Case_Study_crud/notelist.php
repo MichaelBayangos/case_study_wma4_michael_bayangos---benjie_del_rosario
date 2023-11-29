@@ -1,6 +1,6 @@
 <?php
 //show all data in database
-$sql = "SELECT * FROM notes";
+$sql = "SELECT * FROM notes ORDER BY reg_date";
 $result = mysqli_query($conn, $sql);
 echo "<div class='notes'>";
 
