@@ -11,16 +11,16 @@ include("database.php");
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="body">
     <p id="time" class="time"></p>
 
     <div class="herobanner">
         <div class="form-container">
             <h1 class="h1title">Put your thoughts into words</h1>
             <form action="" method="POST">
-                <input type="text" class="title" name="title" placeholder="Title "><br><br>
+                <input type="t  ext" class="title" name="title" placeholder="Title "><br><br>
                 <textarea rows="10" cols="90" name="content" class="content" placeholder="Type here!"></textarea><br><br>
-                <input type="submit" value="SUBMIT" name="submits" class="submit" onclick="return mess();">
+                <input type="submit" value="SUBMIT" name="submits" class="submit" onclick=" return mess();">
                 <?php
                 //insert data in database
                 if (isset($_POST['submits'])) {
@@ -35,10 +35,11 @@ include("database.php");
             </form>
         </div>
     </div>
-    <?php
-    include("notelist.php");
-    ?>
-    <div id="notelistsection"></div>
+    <div id="notelistsection">
+        <?php
+        include("notelist.php");
+        ?>
+    </div>
 </body>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
@@ -57,8 +58,7 @@ include("database.php");
             xhr.send();
 
         }
-        fetchdata();
-        setInterval(fetchdata, 1000);
+
         //note lsit ajax
         function fetchdlist() {
             const xhr1 = new XMLHttpRequest();
@@ -72,9 +72,11 @@ include("database.php");
             xhr1.send();
 
         }
+        fetchdata();
+        setInterval(fetchdata, 1000);
+        fetchdlist();
+        setInterval(fetchdlist, 1000);
     });
-    fetchdlist();
-    setInterval(fetchdlist, 1000);
 
     function mess() {
         alert("Your notes successfully saved");
