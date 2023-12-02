@@ -8,8 +8,13 @@
     background-attachment: fixed;
     background-size: cover;
 }
+.lstbck{
+    background-image: url(img/Desktop\ -\ 3.png);
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+}
 .h1title{
-    margin-left: 120px;
     color: white;
 }
 .title{
@@ -35,7 +40,16 @@
     border-radius: 25px;
     margin: 10px;
 }
-
+.herobanner1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.671);
+    height: 100px;
+    border-radius: 25px;
+    margin: 10px;
+    width: 100%;
+}
 .content{
     color: white;
     background: none;
@@ -50,11 +64,11 @@
 .submit{
     color: black;
     font-weight: 300;
-    width: 200px;
+    width: 180px;
     float: right;
     border: none;
     background: #FDE5D4;
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
 }
 .submit:hover{
@@ -87,18 +101,11 @@
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
-.loginContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
 .divLog{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
 }
 .logForm{
     width: 500px;
@@ -124,23 +131,40 @@
     padding: 10px;
     text-decoration: none;
     color: #fff;
+    margin-left: 32px;
+}
+.create:hover{
+    color: aqua;
 }
 .btninp{
+    color: white;
+    width: 120px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    background-color: #01A7CA;
     float: right;
+    margin-right: 40px;
+}
+.btninp:hover{
+    background: #f2dede;
+    color: black;
 }
 .loginp{
+    border: none;
     position: relative;
-   width: 70%;
-   padding: 5px;
-   margin-bottom: 8px;
-   left: 60px;
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+    left: 45px;
 }
 .passinp{
+    border: none;
     position: relative;
-    width: 70%;
-    padding: 5px;
+    width: 80%;
+    padding: 8px;
     margin-bottom: 30px;
-    left: 60px;
+    left: 45px;
 }
 .out{
     position: absolute;
@@ -191,3 +215,82 @@
 .delform{
     padding: 10px;
 }
+.updateButton{
+    color: white;
+    text-decoration: none;
+    padding: 9px;
+    background: #01A7CA;
+    border-radius: 5px;
+    border: none;
+    margin-left: 80px;
+}
+.updateButton:hover{
+    color: black;
+    background: rgba(255, 255, 255, 0.788);
+}
+.updateTitle{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.h1Update{
+    color: white;
+}
+.updateTitle2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-thoughts{
+    background: rgba(0, 0, 0, 0.76);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.subTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.h1title span {
+    font-family: 'Bad Script', cursive;
+    color: #fff;
+    animation: glowing 1s linear infinite;
+  }
+  @keyframes glowing {
+    0%, 100% {
+      color: #fff;
+      filter: blur(2px);
+      text-shadow: 0 0 10px #00b3ff,
+                   0 0 20px #00b3ff,
+                   0 0 40px #00b3ff,
+                   0 0 80px #00b3ff,
+                   0 0 120px #00b3ff,
+                   0 0 200px #00b3ff,
+                   0 0 300px #00b3ff,
+                   0 0 400px #00b3ff;
+    } 5%, 95% {
+      color: #111;
+      text-shadow: none;
+      filter: blur(0px);
+    }
+  }
+
+  .latest{
+    animation: changer 1s linear infinite;
+  }
+  @keyframes changer{
+    0%{
+        color: #fff;
+    }
+    50%{
+        color: rgb(156, 34, 255)
+    }
+    100%{
+        color: cyan;
+    }
+  }
