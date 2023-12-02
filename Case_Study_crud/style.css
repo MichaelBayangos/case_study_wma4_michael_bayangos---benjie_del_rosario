@@ -1,5 +1,10 @@
-body{
+.body{
     background-image: url(img/Desktop\ -\ 2.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.loginbck{
+    background-image: url(img/LoginBackground.png);
     background-attachment: fixed;
     background-size: cover;
 }
@@ -43,6 +48,9 @@ body{
     font-size: 45px;
 }
 .submit{
+    color: black;
+    font-weight: 300;
+    width: 200px;
     float: right;
     border: none;
     background: #FDE5D4;
@@ -51,6 +59,7 @@ body{
 }
 .submit:hover{
     background: #01A7CA;
+    color: #fff;
 }
 .notespace{
     height: 200px;
@@ -74,19 +83,111 @@ body{
     margin: 10px;
     width: 300px;
 }
-.time{
-    background: #258497b6;
-    border-radius: 10px;
-    padding: 10px;
-    position: fixed;
-    float: right;
-    color: #fff;
-    top: 20px;
-    left: 88%;
-}
 .noteList{
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
+.loginContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
-  
+.divLog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.logForm{
+    width: 500px;
+    padding: 30px;
+    background: #0000009a;
+    border-radius: 15px;
+}
+.h1log{
+    text-align: center;
+    color: #fff;
+    font-size: 28px;
+}
+.error{
+    background: #f2dede;
+    color: #a94442;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+}
+.create{
+    font-size: 14px;
+    display: inline-block ;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+.btninp{
+    float: right;
+}
+.loginp{
+    position: relative;
+   width: 70%;
+   padding: 5px;
+   margin-bottom: 8px;
+   left: 60px;
+}
+.passinp{
+    position: relative;
+    width: 70%;
+    padding: 5px;
+    margin-bottom: 30px;
+    left: 60px;
+}
+.out{
+    position: absolute;
+    left: 95%;
+    top: 5%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    background: #258497b6;
+    border-radius: 10px;
+    padding: 10px;
+    float: right;
+    color: #fff;
+    transition: all 1s;
+}
+.out:hover{
+    background-color: red;
+}
+.seemore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listred{
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    margin-right: 115px;
+}
+.listred:hover{
+    color: red;
+}
+.listredi{
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+}
+.deleteButton{
+    color: black;
+    background: #D6CC99;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+.deleteButton:hover{
+    background: red;
+    color: white;
+}
+.delform{
+    padding: 10px;
+}
