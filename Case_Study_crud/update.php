@@ -1,6 +1,8 @@
 <?php
+session_start();
+include("function.php");
 include("database.php");
-
+$user_data = check_login($conn);
 if (isset($_POST['submits'])) {
     $id = $_POST['id'];
     $title = $_POST['title'];
@@ -31,7 +33,7 @@ $content = urldecode($_GET['content']);
         <div class="form-container">
             <a href="logout.php" class="out">Logout</a>
             <div class="updateTitle">
-                <h1 class="h1title">Update Note</h1>
+                <h1 class="uptitle">Update Your Note <?php echo $user_data['user_name']; ?></h1>
             </div>
             <form action="" method="POST">
                 <input type="hidden" name="id" value="<?php echo $updateid; ?>">

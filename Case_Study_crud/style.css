@@ -294,3 +294,17 @@
         color: cyan;
     }
   }
+  .uptitle{
+    animation: colors 1s linear infinite;
+  }
+  @keyframes colors{
+        0%{
+            color: #fff;
+        }
+        50%{
+            color: rgb(156, 34, 255)
+        }
+        100%{
+            color: cyan;
+        }
+  }
